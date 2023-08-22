@@ -1,6 +1,17 @@
+import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { GuestRouter } from "./routers/guest";
+import { MainRouter } from "./routers/main";
+
 function App() {
+  const [auth, setAuth] = useState(undefined);
+
   return (
-    <div className="vw-full vh-full bg-slate-900  grid grid-cols-2">Hello</div>
+    <BrowserRouter>
+      <div className="h-screen w-screen">
+        {auth === undefined ? <GuestRouter /> : <MainRouter />}
+      </div>
+    </BrowserRouter>
   );
 }
 
