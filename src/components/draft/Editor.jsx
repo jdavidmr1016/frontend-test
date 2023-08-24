@@ -5,7 +5,7 @@ export const Draft = () => {
   return (
     <CKEditor
       editor={ClassicEditor}
-      data="<p>Hello welcome start to chat now</p>"
+      data=""
       onReady={(editor) => {
         console.log("Editor is ready to use!", editor);
       }}

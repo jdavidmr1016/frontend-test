@@ -11,6 +11,14 @@ export const MessajeList = () => {
       <UserMsj />
       <IMsj />
       <IMsj />
+      <UserMsj />
+      <UserMsj />
+      <IMsj />
+      <UserMsj />
+      <UserMsj />
+      <UserMsj />
+      <IMsj />
+      <IMsj />
     </div>
   );
 };

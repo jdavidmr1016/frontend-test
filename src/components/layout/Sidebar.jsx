@@ -9,7 +9,7 @@ export const Sidebar = () => {
   return (
     <>
       {/* Start Sidebar */}
-      <aside className="w-3/12 bg-[#531554] flex flex-col border-collapse text-white">
+      <aside className="hidden w-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col border-collapse text-white">
         <div className="flex justify-between shadow-sm shadow-[#514d51]">
           <div className="flex items-center justify-start h-16 gap-3">
             <img

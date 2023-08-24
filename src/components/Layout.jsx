@@ -7,7 +7,7 @@ export const Layout = () => {
     <div className="h-screen w-screen flex transition-all ease-in-out delay-150">
       <Sidebar />
       {/* Start Main */}
-      <section className="w-9/12 transition-all ease-in-out delay-150">
+      <section className="w-full md:w-9/12 transition-all ease-in-out delay-150">
         <MainRouter />
       </section>
       {/* End Main */}

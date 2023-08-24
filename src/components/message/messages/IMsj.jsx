@@ -1,6 +1,6 @@
 export const IMsj = () => {
   return (
-    <div className="flex flex-col w-1/2 bg-slate-100 m-2 rounded-md p-2 antialiased self-end">
+    <div className="flex flex-col w-1/2 bg-slate-100 m-2 rounded-lg p-1 antialiased self-end">
       <div className="flex justify-between items-center">
         <h4 className="text-[#531554] font-semibold">I</h4>
         <small className="text-xs">10:55pm</small>
