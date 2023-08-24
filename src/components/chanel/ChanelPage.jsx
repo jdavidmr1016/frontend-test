@@ -1,6 +1,7 @@
 import React from "react";
 import { Draft } from "../draft/Editor";
 import { useParams } from "react-router-dom";
+import { MessajeList } from "../message/MessajeList";
 
 export const ChanelPage = () => {
   const { chlId } = useParams();
@@ -15,8 +16,8 @@ export const ChanelPage = () => {
         <small>{users} Users</small>
       </section>
       {/* Body of the conversation where you can see the mesages */}
-      <section className="flex flex-col justify-center items-center flex-1 shadow-sm w-full shadow-[#514d51] overflow-y-auto ">
-        Main
+      <section className="flex flex-col justify-center items-center flex-1 shadow-sm w-full shadow-[#514d51] overflow-y-auto  bg-slate-200">
+        <MessajeList />
       </section>
       {/* Chat input area with rich text editor */}
       <div className="flex  shadow-sm shadow-[#514d51] w-full h-24">

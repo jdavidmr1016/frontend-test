@@ -1,8 +1,8 @@
-export const IMsj = () => {
+export const UserMsj = () => {
   return (
-    <div className="flex flex-col w-1/2 bg-slate-100 m-2 rounded-md p-2 antialiased self-end">
+    <div className="flex flex-col w-1/2 bg-white m-2 rounded-md p-2 antialiased">
       <div className="flex justify-between items-center">
-        <h4 className="text-[#531554] font-semibold">I</h4>
+        <h4 className="text-[#531554] font-semibold">Username</h4>
         <small className="text-xs">10:55pm</small>
       </div>
       <small className="text-sm">
