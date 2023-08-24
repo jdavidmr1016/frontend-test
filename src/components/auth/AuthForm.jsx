@@ -1,18 +1,27 @@
+import { useDispatch } from "react-redux";
 import { useForm } from "../../hooks/useForm";
 import { useLogin } from "../../hooks/useLogin";
+import { login } from "../../slices/authSlice";
 
 export const AuthForm = () => {
+  /* handle form state */
   const [formValues, handleInputChange] = useForm({
     usermail: "",
     password: "",
   });
+  const dispatch = useDispatch();
   const { usermail, password } = formValues;
 
+  /* Handle Form submiting */
   const handleSubmit = (e) => {
     e.preventDefault();
-    useLogin(usermail, password);
+    const [auth, token] = useLogin(usermail, password);
+    auth == "success" && Login(token);
   };
 
+  const Login = (token) => {
+    dispatch(login({ usermail, token }));
+  };
   return (
     <form onSubmit={handleSubmit}>
       <input

@@ -12,6 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="h-screen w-screen">
         {auth.user === null ? <GuestRouter /> : <Layout />}
+
         <Notification />
       </div>
     </BrowserRouter>

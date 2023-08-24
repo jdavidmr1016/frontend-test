@@ -1,5 +1,4 @@
 import { useDispatch } from "react-redux";
-import { useCallback } from "react";
 import { login } from "../slices/authSlice";
 import { useNotify as notify } from "./useNotify";
 
@@ -16,8 +15,7 @@ const data = {
  *
  */
 export const useLogin = (usermail, password) => {
-  /* initialize vars and dispatch hook */
-  const dispatch = useDispatch;
+  /* initialize vars */
   let msg = "";
   let type = "error";
 
@@ -26,20 +24,15 @@ export const useLogin = (usermail, password) => {
     msg = "Please send credentials";
     return notify({ msg, type });
   }
-  /* Set timeout */
-  setTimeout(() => {
-    /* Check data aginst fake if right dispatch Auth if not dispatch notify  */
-    if (data.email === usermail && data.password === password) {
-      msg =
-        "Well done auth credentials match we are redirecting you to the Homepage";
-      type = "success";
-      notify({ msg, type });
-      () => {
-        dispatch(login());
-      };
-    } else {
-      msg = "Please check your credentials";
-      notify({ msg, type });
-    }
-  }, 500);
+
+  /* Check data aginst fake if right dispatch Auth if not dispatch notify  */
+  if (data.email === usermail && data.password === password) {
+    msg =
+      "Well done auth credentials match we are redirecting you to the Homepage";
+    type = "success";
+  } else {
+    msg = "Please check your credentials";
+    notify({ msg, type });
+  }
+  return [type, data.token];
 };

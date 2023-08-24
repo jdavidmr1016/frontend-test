@@ -1,10 +1,14 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { logout } from "../../slices/authSlice";
 
 export const Sidebar = () => {
   const channels = useSelector((state) => state.channels);
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(logout());
+  };
 
   return (
     <>
@@ -24,7 +28,10 @@ export const Sidebar = () => {
               <small>test@dev.io</small>
             </div>
           </div>
-          <button className="bg-red-700 px-4 shadow-md shadow-[#514d51] hover:shadow-xl hover:bg-red-900 transition-all ease-in-out delay-150">
+          <button
+            className="bg-red-700 px-4 shadow-md shadow-[#514d51] hover:shadow-xl hover:bg-red-900 transition-all ease-in-out delay-150"
+            onClick={handleLogout}
+          >
             Logout
           </button>
         </div>
