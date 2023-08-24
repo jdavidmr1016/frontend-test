@@ -1,8 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  entities: [],
-};
+const initialState = [
+  "Frontend-Team",
+  "Backend-Team",
+  "HR",
+  "UI-UX",
+  "Friends",
+  "Beer-Time",
+];
 
 export const channelsSlice = createSlice({
   name: "channels",

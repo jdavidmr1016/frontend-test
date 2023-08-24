@@ -10,8 +10,8 @@ export const MainRouter = () => {
   return (
     <Routes>
       <Route exact path="/" element={<HomePage />} />
-      <Route exact path="chl/" element={<ChanelPage />} />
-      <Route exact path="msg/" element={<MessagePage />} />
+      <Route exact path="chl/:chlId" element={<ChanelPage />} />
+      <Route exact path="msg/:msgId" element={<MessagePage />} />
       <Route path="/*" element={<ErrorPage />} />
     </Routes>
   );

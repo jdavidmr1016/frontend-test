@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "name": { "title": "Mr", "first": "Arun", "last": "Van Zoelen" },
+      "email": "arun.vanzoelen@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/71.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+      }
+    },
+    {
+      "name": { "title": "Mr", "first": "Onur", "last": "Okumuş" },
+      "email": "onur.okumus@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/15.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/15.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/15.jpg"
+      }
+    },
+    {
+      "name": { "title": "Ms", "first": "Alexandra", "last": "Reed" },
+      "email": "alexandra.reed@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/52.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
+      }
+    },
+    {
+      "name": { "title": "Mrs", "first": "Kay", "last": "Hale" },
+      "email": "kay.hale@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/12.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/12.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/12.jpg"
+      }
+    },
+    {
+      "name": { "title": "Madame", "first": "Morgane", "last": "Lambert" },
+      "email": "morgane.lambert@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/77.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/77.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/77.jpg"
+      }
+    },
+    {
+      "name": { "title": "Mr", "first": "Mikael", "last": "Waara" },
+      "email": "mikael.waara@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/14.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/14.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/14.jpg"
+      }
+    },
+    {
+      "name": { "title": "Mr", "first": "Noam", "last": "Fleury" },
+      "email": "noam.fleury@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/98.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
+      }
+    },
+    {
+      "name": { "title": "Mrs", "first": "Alexa", "last": "Newman" },
+      "email": "alexa.newman@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/82.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/82.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg"
+      }
+    },
+    {
+      "name": { "title": "Miss", "first": "Luara", "last": "da Conceição" },
+      "email": "luara.daconceicao@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/46.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/46.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/46.jpg"
+      }
+    },
+    {
+      "name": { "title": "Ms", "first": "Ömür", "last": "Çetiner" },
+      "email": "omur.cetiner@example.com",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/52.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
+      }
+    }
+  ],
+  "info": {
+    "seed": "030dfc72110d8e28",
+    "results": 10,
+    "page": 1,
+    "version": "1.4"
+  }
+}
