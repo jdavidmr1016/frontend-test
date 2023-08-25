@@ -24,6 +24,9 @@ export const useFetch = (type = "GET", url, data) => {
   };
   /* For Get request */
   if (type === "GET") {
+    if (!url) {
+      throw new Error("please dont send empty fetch request send a valid url");
+    }
     useEffect(() => {
       setState({ data: null, loading: true, error: null });
 
@@ -37,11 +40,20 @@ export const useFetch = (type = "GET", url, data) => {
               data,
             });
           }
+        })
+        .catch((error) => {
+          throw new Error(error);
         });
     }, [url]);
   }
   /* For Post ,Put or Delete requests */
   if (type === "POST" || type === "PUT" || type === "DELETE") {
+    if (!url || !data) {
+      throw new Error(
+        "Please fulfill the request with Data for POST-PUT or DELETE methods"
+      );
+    }
+
     useEffect(() => {
       setState({ data: null, loading: true, error: null });
 
@@ -55,6 +67,9 @@ export const useFetch = (type = "GET", url, data) => {
               data,
             });
           }
+        })
+        .catch((error) => {
+          throw new Error(error);
         });
     }, [url]);
   }

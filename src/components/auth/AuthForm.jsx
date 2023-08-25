@@ -28,8 +28,9 @@ export const AuthForm = () => {
       <input
         type="email"
         required
-        placeholder="Username"
+        placeholder="User email adress"
         name="usermail"
+        autoComplete="usermail"
         value={usermail}
         onChange={handleInputChange}
         className="px-2 w-full h-12 bg-slate-100 outline-none border-b-2 border-[#531554] focus:border-b-4  transition-all ease-in-out delay-150 "
@@ -40,6 +41,7 @@ export const AuthForm = () => {
         required
         placeholder="Password"
         name="password"
+        autoComplete="password"
         value={password}
         onChange={handleInputChange}
         className="px-2 w-full h-12 bg-slate-100 outline-none border-b-2 border-[#531554] focus:border-b-4 transition-all ease-in-out delay-150"

@@ -1,15 +1,33 @@
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
+//import {deleteChanel} from "../../../slices/channelsSlice"
+/* import {
+  handleAddChanel,
+} from "../../../helpers/chanelUtils"; */
 
 export const Channels = () => {
   const channels = useSelector((state) => state.channels);
+  const dispatch = useDispatch();
+
+  const handleAdd = () => {
+    /*TODO - Feature to implement  Renders a modal with form to add a channel */
+  };
+
+  const handleDel = (e) => {
+    /* const res = handleAddChanel(e)
+    if(res.ok){
+     dispatch(deleteChanel())
+    } */
+  };
+
   return (
     <>
       <div className="w-full flex flex-row items-center justify-between">
         <h4 className="w-full"> Channels</h4>
-        <button className="pr-2 hover:text-yellow-500">
+        <button className="pr-2 hover:text-yellow-500" onClick={handleAdd}>
           <AiOutlinePlus />
         </button>
       </div>
@@ -28,7 +46,7 @@ export const Channels = () => {
             >
               #{chnl}
             </NavLink>
-            <button className="pr-2 hover:text-red-600">
+            <button className="pr-2 hover:text-red-600" onClick={handleDel}>
               <BsTrash />
             </button>
           </span>
