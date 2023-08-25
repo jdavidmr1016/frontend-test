@@ -21,7 +21,10 @@ export const ChanelPage = () => {
       </section>
       {/* Chat input area with rich text editor */}
       <div className="flex  shadow-sm shadow-[#514d51] w-full h-24">
-        <div className="flex-1 relative overflow-y-auto">
+        <div className="flex-1 w-full h-24">
+          <span className="bg-[#531554] text-white flex justify-start items-center">
+            Message
+          </span>
           <Draft />
         </div>
       </div>
