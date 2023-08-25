@@ -2,20 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [];
 /* Slice for the direct messages */
-export const msjSlice = createSlice({
+export const msgSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
     createMsj: (state, action) => {
-      /* Create a Msj */
+      /* Create a Msg */
     },
     deleteMsj: (state, action) => {
-      /* Delete a Msj */
+      /* Delete a Msg */
     },
     updateMsj: (state, action) => {
-      /* Delete a Msj */
+      /* Delete a Msg */
     },
   },
 });
-export const { createMsj, deleteMsj, updateMsj } = msjSlice.actions;
-export default msjSlice.reducer;
+export const { createMsj, deleteMsj, updateMsj } = msgSlice.actions;
+export default msgSlice.reducer;
