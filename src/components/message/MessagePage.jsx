@@ -6,7 +6,6 @@ import fakeData from "../../assets/data/minsample.json";
 export const MessagePage = () => {
   const { msgId } = useParams();
   const user = fakeData[msgId];
-  console.log("🚀 ~ file: MessagePage.jsx:9 ~ MessagePage ~ user:", user);
 
   return (
     <div className="flex flex-col w-full h-full justify-between items-center transition-all ease-in-out delay-150">

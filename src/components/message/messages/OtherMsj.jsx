@@ -1,10 +1,21 @@
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
-export const UserMsj = () => {
+
+export const UserMsj = ({ data }) => {
+  console.log("🚀 ~ file: OtherMsj.jsx:5 ~ UserMsj ~ data:", data);
   return (
     <div className="flex flex-col w-1/2 bg-white m-2 rounded-lg p-1 antialiased">
       <div className="flex justify-between items-center">
-        <h4 className="text-[#531554] font-semibold">Username</h4>
+        <div className="flex items-center justify-center gap-1">
+          <img
+            className="rounded-full"
+            src={data.picture.thumbnail}
+            alt="user"
+            width="16px"
+            height="16px"
+          />
+          <h4 className="text-[#531554] font-semibold">{data.name.first}</h4>
+        </div>
         <small className="text-xs">10:55pm</small>
       </div>
       <small className="text-sm">

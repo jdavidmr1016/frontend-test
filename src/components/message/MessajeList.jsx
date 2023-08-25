@@ -1,22 +1,22 @@
 import { IMsj } from "./messages/IMsj";
 import { UserMsj } from "./messages/OtherMsj";
 
-export const MessajeList = () => {
+export const MessajeList = ({ data }) => {
   return (
     <div className="flex flex-col h-full w-full">
-      <UserMsj />
+      <UserMsj data={data} />
       <IMsj />
-      <UserMsj />
-      <UserMsj />
-      <UserMsj />
+      <UserMsj data={data} />
+      <UserMsj data={data} />
+      <UserMsj data={data} />
       <IMsj />
       <IMsj />
-      <UserMsj />
-      <UserMsj />
+      <UserMsj data={data} />
+      <UserMsj data={data} />
       <IMsj />
-      <UserMsj />
-      <UserMsj />
-      <UserMsj />
+      <UserMsj data={data} />
+      <UserMsj data={data} />
+      <UserMsj data={data} />
       <IMsj />
       <IMsj />
     </div>
