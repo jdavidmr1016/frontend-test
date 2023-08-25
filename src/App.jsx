@@ -1,18 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import { GuestRouter } from "./routers/guest";
-
 import { Notification } from "./components/Notification";
-import { useSelector } from "react-redux";
 import { Layout } from "./components/Layout";
-
+import { useSelector } from "react-redux";
 function App() {
-  const auth = useSelector((state) => state.auth);
+  const auth = useSelector((state) => state.auth.user);
 
   return (
     <BrowserRouter>
       <div className="h-screen w-screen">
-        {auth.user === null ? <GuestRouter /> : <Layout />}
-
+        {auth === null ? <GuestRouter /> : <Layout />}
         <Notification />
       </div>
     </BrowserRouter>

@@ -12,7 +12,14 @@ const initialState = [
 export const channelsSlice = createSlice({
   name: "channels",
   initialState,
-  reducers: {},
+  reducers: {
+    addChanel: (state, action) => {
+      /* Add a chanel */
+      state.push(action.payload.chanel);
+    },
+    /* Remove a channel */
+    deleteChanel: (state, action) => state.filter(),
+  },
 });
-
+export const { addChanel, deleteChanel } = channelsSlice.actions;
 export default channelsSlice.reducer;

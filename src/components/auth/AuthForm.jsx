@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { redirect } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import { useLogin } from "../../hooks/useLogin";
 import { login } from "../../slices/authSlice";
@@ -18,7 +19,7 @@ export const AuthForm = () => {
     const [auth, token] = useLogin(usermail, password);
     auth == "success" && Login(token);
   };
-
+  /* handle login */
   const Login = (token) => {
     dispatch(login({ usermail, token }));
   };

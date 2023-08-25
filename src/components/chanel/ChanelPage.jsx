@@ -1,7 +1,7 @@
 import React from "react";
 import { Draft } from "../draft/Editor";
 import { useParams } from "react-router-dom";
-import { MessajeList } from "../message/MessajeList";
+import { MessajeList } from "./ChanlMsg";
 
 export const ChanelPage = () => {
   const { chlId } = useParams();

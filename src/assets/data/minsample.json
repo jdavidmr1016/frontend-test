@@ -1,11 +1,11 @@
 [
   {
-    "name": { "title": "Mr", "first": "Arun", "last": "Van Zoelen" },
-    "email": "arun.vanzoelen@example.com",
+    "name": { "title": "Mrs", "first": "Alexa", "last": "Newman" },
+    "email": "alexa.newman@example.com",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/men/71.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+      "large": "https://randomuser.me/api/portraits/women/82.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/82.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg"
     }
   },
   {
@@ -51,42 +51,6 @@
       "large": "https://randomuser.me/api/portraits/men/14.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/14.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/14.jpg"
-    }
-  },
-  {
-    "name": { "title": "Mr", "first": "Noam", "last": "Fleury" },
-    "email": "noam.fleury@example.com",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/men/98.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
-    }
-  },
-  {
-    "name": { "title": "Mrs", "first": "Alexa", "last": "Newman" },
-    "email": "alexa.newman@example.com",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/women/82.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/82.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg"
-    }
-  },
-  {
-    "name": { "title": "Miss", "first": "Luara", "last": "da Conceição" },
-    "email": "luara.daconceicao@example.com",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/women/46.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/46.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/46.jpg"
-    }
-  },
-  {
-    "name": { "title": "Ms", "first": "Ömür", "last": "Çetiner" },
-    "email": "omur.cetiner@example.com",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/women/52.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
     }
   }
 ]
