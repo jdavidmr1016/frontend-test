@@ -1,15 +1,16 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { logout } from "../../slices/authSlice";
 
 import { BiExit } from "react-icons/bi";
 import { ActiveUsers } from "./menus/ActiveUsers";
 import { Channels } from "./menus/Channels";
+import { CloseMenuBtn } from "./menubtn/CloseMenuBtn";
 
 export const Sidebar = () => {
   const dispatch = useDispatch();
-
+  const isOpen = useSelector((state) => state.ui.isSidebarOpen);
   const handleLogout = () => {
     dispatch(logout());
   };
@@ -17,7 +18,13 @@ export const Sidebar = () => {
   return (
     <>
       {/* Start Sidebar */}
-      <aside className="hidden w-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col border-collapse text-white">
+      <aside
+        className={
+          isOpen === false
+            ? "absolute md:static hidden w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between border-collapse text-white transition-all ease-in-out delay-300"
+            : "absolute md:static w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between border-collapse text-white transition-all ease-in-out delay-300"
+        }
+      >
         {/* User Div */}
         <div className="flex justify-between shadow-sm shadow-[#514d51]">
           <div className="flex items-center justify-start h-16 gap-3">
@@ -59,6 +66,11 @@ export const Sidebar = () => {
           <ActiveUsers />
         </div>
         {/* End menu */}
+        <div className=" flex items-center justify-end w-full ">
+          <div className="mr-2">
+            <CloseMenuBtn />
+          </div>
+        </div>
       </aside>
       {/* End Sidebar */}
     </>
