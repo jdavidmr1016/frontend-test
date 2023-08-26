@@ -1,6 +1,6 @@
-import React from "react";
 import Logo from "../../assets/Logo.png";
 import { AuthForm } from "./authForm";
+
 export const LoginPage = () => {
   return (
     <div className="bg-[#531554] flex items-center justify-center h-screen w-screen transition-all ease-in-out delay-150">

@@ -21,8 +21,8 @@ export const Sidebar = () => {
       <aside
         className={
           isOpen === false
-            ? "absolute md:static hidden w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between border-collapse text-white transition-all ease-in-out delay-300"
-            : "absolute md:static w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between border-collapse text-white transition-all ease-in-out delay-300"
+            ? "absolute md:static hidden w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between md:justify-start border-collapse text-white transition-all ease-in-out delay-300"
+            : "absolute md:static w-full h-full md:visible md:w-3/12 bg-[#531554] md:flex flex-col justify-between md:justify-start border-collapse text-white transition-all ease-in-out delay-300"
         }
       >
         {/* User Div */}
