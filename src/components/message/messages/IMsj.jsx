@@ -1,11 +1,12 @@
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
-export const IMsj = () => {
+
+export const IMsj = ({ timestamp }) => {
   return (
     <div className="flex flex-col w-1/2 bg-slate-100 m-2 rounded-lg p-1 antialiased self-end">
       <div className="flex justify-between items-center">
         <h4 className="text-[#531554] font-semibold">I</h4>
-        <small className="text-xs">10:55pm</small>
+        <small className="text-xs">{timestamp}</small>
       </div>
       <small className="text-sm">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est

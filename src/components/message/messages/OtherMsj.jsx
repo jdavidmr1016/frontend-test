@@ -1,7 +1,7 @@
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
 
-export const UserMsj = ({ data }) => {
+export const UserMsj = ({ data, timestamp }) => {
   return (
     <div className="flex flex-col w-1/2 bg-white m-2 rounded-lg p-1 antialiased">
       <div className="flex justify-between items-center">
@@ -15,7 +15,7 @@ export const UserMsj = ({ data }) => {
           />
           <h4 className="text-[#531554] font-semibold">{data.name.first}</h4>
         </div>
-        <small className="text-xs">10:55pm</small>
+        <small className="text-xs">{timestamp}</small>
       </div>
       <small className="text-sm">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est
